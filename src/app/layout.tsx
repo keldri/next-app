@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { LucideKanban } from "lucide-react";
-import { homePath, ticketsPath } from "@/paths";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
 import Header from "@/components/header";
 
 const geistSans = Geist({
