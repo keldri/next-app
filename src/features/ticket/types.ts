@@ -6,3 +6,9 @@ export type Ticket = {
   content: string;
   status: TicketStatus;
 };
+
+export type TicketPageProps = {
+  params: Promise<{
+    ticketId: string;
+  }>;
+};

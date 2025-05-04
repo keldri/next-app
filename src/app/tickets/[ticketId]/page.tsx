@@ -3,13 +3,8 @@ import { Placeholder } from "@/components/placeholder";
 import { Button } from "@/components/ui/button";
 import { initialTickets } from "@/data";
 import { ticketsPath } from "@/paths";
+import { TicketPageProps } from "@/features/ticket/types";
 import { TicketItem } from "@/features/ticket/components/ticket-item";
-
-type TicketPageProps = {
-  params: Promise<{
-    ticketId: string;
-  }>;
-};
 
 const TicketPage = async ({ params }: TicketPageProps) => {
   const { ticketId } = await params;
